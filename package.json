@@ -1,0 +1,25 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.pug",
+    "build": "parcel build index.pug",
+    "start": "serve dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ffloriel/Blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ffloriel/Blog/issues"
+  },
+  "homepage": "https://github.com/Ffloriel/Blog#readme",
+  "devDependencies": {
+    "pug": "^2.0.3",
+    "stylus": "^0.54.5"
+  }
+}
