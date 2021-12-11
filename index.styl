@@ -40,19 +40,19 @@ article
   grid-template-columns auto 85px 85px 762px 85px 85px auto
 
   @media screen and (max-width: mediumWidth)
-    grid-template-columns auto 0 60px calc(100% - 60px * 2) 60px 0 auto
+    grid-template-columns auto 0 60px 1fr 60px 0 auto
 
   @media screen and (max-width: phoneWidth)
-    grid-template-columns auto 0 20px calc(100% - 20px * 2) 20px 0 auto
+    grid-template-columns auto 0 20px 1fr 20px 0 auto
 
 article > *
   grid-column 4
 
 article > figure
   grid-column 1 / -1
-  width 100vw
   max-width 100%
   margin 2.2rem 0
+  overflow hidden
 
   &.hero
     margin 0 0 1.2rem 0
@@ -90,6 +90,7 @@ p
 
 q
   position relative
+  grid-column 3 / 5
   font-family Heroic
   font-size 2rem
   font-style italic
@@ -98,6 +99,9 @@ q
   color #383092
   margin-bottom 1.2rem
   padding 1rem 1.25rem 0 0
+
+  @media screen and (max-width: mediumWidth)
+    grid-column 4
 
   &:before
     position absolute
